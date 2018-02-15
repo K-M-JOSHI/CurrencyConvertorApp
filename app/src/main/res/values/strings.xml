@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Currency Convertor</string>
+    <string name="indian_rupee">Indian Rupee:</string>
+    <string name="japanese_yen">Japanese Yen:</string>
+    <string name="us_dollar">US Dollar:</string>
+    <string name="malaysian_ringgit">Malaysian Ringgit:</string>
+    <string name="bahraini_dinar">Bahraini Dinar:</string>
+    <string name="russian_ruble">Russian Ruble:</string>
+    <string name="hungarian_forint">Hungarian Forint:</string>
+    <string name="swiss_franc">Swiss Franc:</string>
+    <string name="enter_amount_hint">Enter Amount</string>
+    <string name="result_hint">Result</string>
+    <string name="clear">Clear</string>
+</resources>

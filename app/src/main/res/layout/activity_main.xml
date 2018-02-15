@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.promact.curcon.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/screen_background"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp"
+                app:contentPadding="10dp"
+
+                >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="7dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/japanese_yen"
+                    android:textAlignment="textEnd"
+                    android:paddingEnd="15dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:id="@+id/japaneseYenInput"
+                    android:hint="@string/enter_amount_hint"
+                    android:inputType="numberDecimal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    />
+
+                <ImageButton
+                    android:id="@+id/calculateBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_import_export_black_24dp" />
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 app:cardCornerRadius="5dp"
+                 app:cardElevation="15dp"
+                 app:contentPadding="10dp"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/indian_rupee"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/indianRupee"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/us_dollar"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/usDollar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/malaysian_ringgit"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/malaysianRinggit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/bahraini_dinar"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/bahrainiDinar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/russian_ruble"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/russianRuble"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/hungarian_forint"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/hungarianForint"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/line_color" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/swiss_franc"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="15dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+                        <TextView
+                            android:id="@+id/swissFranc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.75"
+                            android:background="@layout/box_style"
+                            android:hint="@string/result_hint"
+                            android:padding="4dp"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    </LinearLayout>
+                </LinearLayout>
+             </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

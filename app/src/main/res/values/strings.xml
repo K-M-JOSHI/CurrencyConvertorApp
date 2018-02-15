@@ -11,4 +11,5 @@
     <string name="enter_amount_hint">Enter Amount</string>
     <string name="result_hint">Result</string>
     <string name="clear">Clear</string>
+    <string name="auto">Auto</string>
 </resources>
